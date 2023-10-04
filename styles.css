@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400;500;700;800&family=Outfit:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ingrid+Darling&family=Inter:wght@400;500;700;800&family=Outfit:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ingrid+Darling&family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;700;800&display=swap");
+.initial, .shopNow {
+  all: initial;
+}
+
+.text-clean, .navbar .brand a {
+  text-decoration: none;
+}
+
+.uppercase, .content .left .texts div:nth-child(3), .content .left .texts div:nth-child(2), .shopNow, .navbar .brand a {
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .brand a {
+  color: white;
+}
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar .nav-links .nav-item {
+  margin-right: 15px;
+  color: #FFF;
+  font-family: "Outfit";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 92% */
+}
+.navbar .nav-links .nav-item:last-child {
+  margin-right: 0;
+}
+.navbar .nav-links .nav-item .nav-link {
+  color: white;
+  text-decoration: none;
+}
+.navbar .nav-links .nav-item .nav-link:hover {
+  color: lightgray;
+}
+
+body {
+  background: #222222;
+}
+
+.initial, .shopNow {
+  all: initial;
+}
+
+.text-clean, .navbar .brand a {
+  text-decoration: none;
+}
+
+.uppercase, .content .left .texts div:nth-child(3), .content .left .texts div:nth-child(2), .shopNow, .navbar .brand a {
+  text-transform: uppercase;
+}
+
+.dots {
+  position: absolute;
+  top: 12%;
+  right: 40%;
+}
+
+.shopNow {
+  background: #FFB800;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 137px;
+  height: 42px;
+  color: #222;
+  font-family: "Outfit";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots:nth-child(2) {
+  position: absolute;
+  top: 52%;
+  right: 94%;
+  transform: rotate(-90deg);
+}
+
+.dots:nth-child(3) {
+  position: absolute;
+  top: 72%;
+  right: -2%;
+  transform: rotate(-90deg);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  color: white;
+  margin-top: -150px;
+}
+.content .left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.content .left .texts {
+  margin-left: 250px;
+}
+.content .left .texts div:nth-child(1) {
+  font-family: "Cedarville Cursive", cursive;
+  transform: rotate(-10deg);
+  color: #FFF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  margin-left: 80px;
+  /* 57.5% */
+}
+.content .left .texts div:nth-child(2) {
+  transform: rotate(-10deg);
+  color: #FFB800;
+  font-family: "Inter", sans-serif;
+  font-size: 125px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 23px;
+  margin-top: 50px;
+  /* 57.5% */
+}
+.content .left .texts div:nth-child(3) {
+  font-family: "Inter", sans-serif;
+  transform: rotate(-10deg);
+  color: #FFF;
+  font-size: 125px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 23px;
+  margin-top: 60px;
+  margin-left: 400px;
+  /* 57.5% */
+}
+.content .left .bottom-tag {
+  margin-left: 250px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.content .left .bottom-tag div {
+  color: #E4F1FF;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  /* 115% */
+}
+.content .right {
+  position: relative;
+  /* Display as an inline block to fit the content size */
+  padding: 10px;
+  margin-right: 330px;
+}
+.content .right .img-bg {
+  background: #FFB800;
+  transform: rotate(-30deg);
+  margin-left: 117px;
+  width: 443.461px;
+  height: 443px;
+  z-index: -2;
+  position: absolute;
+  top: 20%;
+  right: 4.9%;
+  border-radius: 50%;
+}
+.content .right .img-hide {
+  margin-right: -101px;
+  position: absolute;
+  background: #222;
+  transform: rotate(-30deg);
+  width: 562.461px;
+  height: 295px;
+  top: 53%;
+  right: 0%;
+  z-index: -1;
+}
+.content .right img {
+  width: 786.461px;
+  height: 880.057px;
+}/*# sourceMappingURL=styles.css.map */
