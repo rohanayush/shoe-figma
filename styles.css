@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 
-.uppercase, .content .left .texts div:nth-child(3), .content .left .texts div:nth-child(2), .shopNow, .navbar .brand a {
+.uppercase, .container-2 .brand, .content .left .texts div:nth-child(3), .content .left .texts div:nth-child(2), .shopNow, .navbar .brand a {
   text-transform: uppercase;
 }
 
@@ -61,7 +61,7 @@ body {
   text-decoration: none;
 }
 
-.uppercase, .content .left .texts div:nth-child(3), .content .left .texts div:nth-child(2), .shopNow, .navbar .brand a {
+.uppercase, .container-2 .brand, .content .left .texts div:nth-child(3), .content .left .texts div:nth-child(2), .shopNow, .navbar .brand a {
   text-transform: uppercase;
 }
 
@@ -98,7 +98,7 @@ body {
 .dots:nth-child(3) {
   position: absolute;
   top: 72%;
-  right: -2%;
+  right: 0%;
   transform: rotate(-90deg);
 }
 
@@ -201,4 +201,72 @@ body {
 .content .right img {
   width: 786.461px;
   height: 880.057px;
+}
+
+.container-2 {
+  color: white;
+  /* Add this CSS to make the central element higher in position */
+  /* Rest of your CSS styles for .box-shoe and other elements go here */
+}
+.container-2 .brand {
+  margin-top: 88px;
+  margin-left: 92px;
+}
+.container-2 .title {
+  color: #222;
+  font-family: "Outfit";
+  font-size: 81px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 23px;
+  margin-top: 30px;
+  text-align: center;
+  /* 28.395% */
+}
+.container-2 .shoe-rails {
+  display: flex;
+  gap: 100px;
+  margin-top: 130px;
+  transition: transform 0.3s ease-in-out;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+}
+.container-2 .central {
+  transform: translateY(-20px); /* Adjust the translateY value as needed */
+  z-index: 1;
+}
+.container-2 .box-shoe {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  width: 317px;
+  height: 404px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #222;
+  font-family: "Outfit";
+  font-size: 30px;
+}
+.container-2 .box-shoe img {
+  width: 240px;
+  height: 240px;
+}
+.container-2 .box-shoe.selected {
+  transform: translateY(-30px); /* Adjust translateY value as needed */
+}
+.container-2 .tag {
+  border-radius: 15px;
+  background: #222;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

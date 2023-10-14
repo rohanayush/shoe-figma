@@ -51,21 +51,21 @@ body {
     justify-content: center;
 }
 
-    .dots:nth-child(1){
+.dots:nth-child(1) {}
 
-    }
-    .dots:nth-child(2){
-        position: absolute;
-        top: 52%;
-        right: 94%;
-        transform: rotate(-90deg);
-    }
-    .dots:nth-child(3){
-        position: absolute;
-        top: 72%;
-        right:-2%;
-        transform: rotate(-90deg);
-    }
+.dots:nth-child(2) {
+    position: absolute;
+    top: 52%;
+    right: 94%;
+    transform: rotate(-90deg);
+}
+
+.dots:nth-child(3) {
+    position: absolute;
+    top: 72%;
+    right: 0%;
+    transform: rotate(-90deg);
+}
 
 .content {
     display: flex;
@@ -96,7 +96,7 @@ body {
                 font-style: normal;
                 font-weight: 700;
                 line-height: 23px;
-                margin-left:80px;
+                margin-left: 80px;
                 /* 57.5% */
             }
 
@@ -193,4 +193,88 @@ body {
             height: 880.057px;
         }
     }
+}
+
+// Page 2
+.container-2 {
+    color: white;
+
+    .brand {
+        margin-top: 88px;
+        margin-left: 92px;
+        @extend .uppercase;
+
+    }
+
+    .title {
+        color: #222;
+        font-family: 'Outfit';
+        font-size: 81px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 23px;
+        margin-top: 30px;
+        text-align: center;
+        /* 28.395% */
+    }
+.shoe-rails{
+    display: flex;
+    gap:100px;
+    margin-top :130px;
+    
+  transition: transform 0.3s ease-in-out;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+ }
+/* Add this CSS to make the central element higher in position */
+.central {
+    transform: translateY(-20px); /* Adjust the translateY value as needed */
+    z-index: 1;
+  }
+  
+  /* Rest of your CSS styles for .box-shoe and other elements go here */
+//   .carousel-shoe-container {
+//     overflow: hidden;
+//     max-width: 800px; /* Adjust the maximum width as needed */
+//     margin: 0 auto;
+//   }
+    .box-shoe {
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.25);
+        width: 317px;
+        height: 404px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #222;
+        font-family: 'Outfit';
+        font-size: 30px;
+
+        img{
+            width: 240px;
+            height: 240px;
+        }
+    }
+    .box-shoe.selected {
+        transform: translateY(-30px); /* Adjust translateY value as needed */
+      }
+
+    .tag {
+        border-radius: 15px;
+        background: #222;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+
+    }
+
 }
