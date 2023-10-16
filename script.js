@@ -2,25 +2,31 @@ const slides = document.querySelectorAll('.carousel-slide');
 let currentSlide = 0;
 
 if (slides.length > 0) {
-    slides[0].style.display = 'none';
+    slides[1].style.display = 'none';
     if(slides.length === 2){
-        document.body.style.backgroundColor = '#FFB800';
+        document.body.style.backgroundColor = '#222';
     }
   }
 
+const next = document.querySelector('.next');
+next.addEventListener('click', ()=>{
+  // slides[0].style.display='none';
+  // slides[1].style.display='block';
+  // document.body.style.backgroundColor = '#222';
+  showSlide(1);
+})
 
-
-// function showSlide(index) {
-//   slides.forEach((slide, i) => {
-//     slide.style.display = i === index ? 'block' : 'none';
-//   });
-//   // Set body background based on the active slide
-//   if (index === 0) {
-//     document.body.style.backgroundColor = '#222'; // Set body background to #222 for the first slide
-//   } else if (index === 1) {
-//     document.body.style.backgroundColor = '#FFB800'; // Set body background to #FFB800 for the second slide
-//   }
-// }
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? 'block' : 'none';
+  });
+  // Set body background based on the active slide
+  if (index === 0) {
+    document.body.style.backgroundColor = '#222'; // Set body background to #222 for the first slide
+  } else if (index === 1) {
+    document.body.style.backgroundColor = '#FFB800'; // Set body background to #FFB800 for the second slide
+  }
+}
 
 // function nextSlide() {
 //   currentSlide = (currentSlide + 1) % slides.length;
@@ -47,6 +53,18 @@ if (slides.length > 0) {
 
 let currentShoe = 0;
 const shoeBoxes = document.querySelectorAll('.box-shoe');
+
+shoeBoxes.forEach(box => {
+  box.addEventListener('click', () => {
+    // Remove 'selected' class from all boxes
+    shoeBoxes.forEach(box => {
+      box.classList.remove('selected');
+    });
+
+    // Add 'selected' class to the clicked box
+    box.classList.add('selected');
+  });
+});
 
 function showShoe(index) {
   shoeBoxes.forEach((box, i) => {

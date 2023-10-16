@@ -15,6 +15,7 @@
   color: white;
   padding: 10px;
   display: flex;
+  margin-top: 20px;
   justify-content: space-between;
 }
 .navbar .brand a {
@@ -33,7 +34,9 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23px; /* 92% */
+  line-height: 23px;
+  /* 92% */
+  cursor: pointer;
 }
 .navbar .nav-links .nav-item:last-child {
   margin-right: 0;

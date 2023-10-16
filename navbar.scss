@@ -13,11 +13,13 @@ $highColor: #FFB800;
 }
 
 
+
 .navbar {
     background-color: transparent;
     color: white;
     padding: 10px;
     display: flex;
+    margin-top: 20px;
     justify-content: space-between;
 
     .brand {
@@ -41,21 +43,25 @@ $highColor: #FFB800;
             font-size: 25px;
             font-style: normal;
             font-weight: 400;
-            line-height: 23px; /* 92% */
+            line-height: 23px;
+            /* 92% */
+            cursor: pointer;
+
             &:last-child {
                 margin-right: 0;
             }
 
             .nav-link {
-                color: white;
-                text-decoration: none;
-
                 &:hover {
                     color: lightgray;
                 }
+                color: white;
+                text-decoration: none;
+
+                
             }
         }
     }
 
-   
+
 }
