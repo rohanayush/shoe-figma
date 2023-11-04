@@ -25,6 +25,8 @@ function showSlide(index) {
     document.body.style.backgroundColor = '#222'; // Set body background to #222 for the first slide
   } else if (index === 1) {
     document.body.style.backgroundColor = '#FFB800'; // Set body background to #FFB800 for the second slide
+  }else if(index === 2){
+    document.body.style.backgroundColor = '#FFB800';
   }
 }
 
@@ -85,3 +87,8 @@ function prevShoe() {
   currentShoe = (currentShoe - 1 + shoeBoxes.length) % shoeBoxes.length;
   showShoe(currentShoe);
 }
+
+const allProducts = document.querySelector('.allProducts1')
+allProducts.addEventListener('click', ()=>{
+  showSlide(2);
+})
